@@ -67,3 +67,21 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+
+
+
+
+
+*.dcu
+.svn
+__recovery
+__history
+*.*/__recovery
+*.*/__history
+*/__recovery
+*/__history
+*.identcache
+*.dproj.local
+*/Debug
+*.rsm

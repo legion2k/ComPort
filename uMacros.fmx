@@ -1,0 +1,1947 @@
+object fMacroses: TfMacroses
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = #1052#1072#1082#1088#1086#1089#1099
+  ClientHeight = 663
+  ClientWidth = 743
+  Padding.Left = 5.000000000000000000
+  Padding.Top = 5.000000000000000000
+  Padding.Right = 5.000000000000000000
+  Padding.Bottom = 5.000000000000000000
+  Position = MainFormCenter
+  StyleBook = fMain.StyleBook
+  Constraints.MinHeight = 200.000000000000000000
+  Constraints.MinWidth = 400.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Bottom
+    ClipChildren = True
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 609.000000000000000000
+    Size.Width = 733.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ButtonClose: TButton
+      Align = Client
+      Cancel = True
+      ModalResult = 8
+      Margins.Right = 10.000000000000000000
+      Size.Width = 600.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #1047#1072#1082#1088#1099#1090#1100
+    end
+    object ButtonReset: TButton
+      Align = Right
+      Position.X = 620.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 103.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #1057#1073#1088#1086#1089#1080#1090#1100' '#1074#1089#1105
+      OnClick = ButtonResetClick
+    end
+  end
+  object PresentedScrollBox1: TPresentedScrollBox
+    ScrollDirections = Vertical
+    Align = Client
+    Size.Width = 733.000000000000000000
+    Size.Height = 604.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 733.000000000000000000
+    Viewport.Height = 604.000000000000000000
+    object Layout1: TLayout
+      Tag = 1
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Edit1: TEdit
+        Tag = 1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button1: TButton
+        Tag = 1
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 1'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox1: TSpinBox
+        Tag = 1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox1: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer1: TTimer
+        Tag = 1
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 24
+        Top = 8
+      end
+      object CheckBox1: TCheckBox
+        Tag = 1
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout10: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 270.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 19
+      object Edit10: TEdit
+        Tag = 10
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button10: TButton
+        Tag = 10
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 10'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox10: TSpinBox
+        Tag = 10
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox10: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer10: TTimer
+        Tag = 10
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 16
+        Top = 272
+      end
+      object CheckBox10: TCheckBox
+        Tag = 10
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Edit2: TEdit
+        Tag = 2
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button2: TButton
+        Tag = 2
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 2'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox2: TSpinBox
+        Tag = 2
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox2: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer2: TTimer
+        Tag = 2
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 64
+        Top = 40
+      end
+      object CheckBox2: TCheckBox
+        Tag = 2
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout3: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 60.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Edit3: TEdit
+        Tag = 3
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button3: TButton
+        Tag = 3
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 3'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox3: TSpinBox
+        Tag = 3
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox3: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer3: TTimer
+        Tag = 3
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 112
+        Top = 64
+      end
+      object CheckBox3: TCheckBox
+        Tag = 3
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout4: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 90.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object Edit4: TEdit
+        Tag = 4
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button4: TButton
+        Tag = 4
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 4'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox4: TSpinBox
+        Tag = 4
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox4: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer4: TTimer
+        Tag = 4
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 152
+        Top = 96
+      end
+      object CheckBox4: TCheckBox
+        Tag = 4
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout5: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Edit5: TEdit
+        Tag = 5
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button5: TButton
+        Tag = 5
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 5'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox5: TSpinBox
+        Tag = 5
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox5: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer5: TTimer
+        Tag = 5
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 192
+        Top = 120
+      end
+      object CheckBox5: TCheckBox
+        Tag = 5
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout6: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 150.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object Edit6: TEdit
+        Tag = 6
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button6: TButton
+        Tag = 6
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 6'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox6: TSpinBox
+        Tag = 6
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox6: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer6: TTimer
+        Tag = 6
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 240
+        Top = 152
+      end
+      object CheckBox6: TCheckBox
+        Tag = 6
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout7: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 180.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Edit7: TEdit
+        Tag = 7
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button7: TButton
+        Tag = 7
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 7'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox7: TSpinBox
+        Tag = 7
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox7: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer7: TTimer
+        Tag = 7
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 280
+        Top = 184
+      end
+      object CheckBox7: TCheckBox
+        Tag = 7
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout8: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 210.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      object Edit8: TEdit
+        Tag = 8
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button8: TButton
+        Tag = 8
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 8'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox8: TSpinBox
+        Tag = 8
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox8: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer8: TTimer
+        Tag = 8
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 328
+        Top = 216
+      end
+      object CheckBox8: TCheckBox
+        Tag = 8
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout9: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      object Edit9: TEdit
+        Tag = 9
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button9: TButton
+        Tag = 9
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 9'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox9: TSpinBox
+        Tag = 9
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox9: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer9: TTimer
+        Tag = 9
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 368
+        Top = 240
+      end
+      object CheckBox9: TCheckBox
+        Tag = 9
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout11: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 300.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      object Edit11: TEdit
+        Tag = 11
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button11: TButton
+        Tag = 11
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 11'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox11: TSpinBox
+        Tag = 11
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox11: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer11: TTimer
+        Tag = 11
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 56
+        Top = 304
+      end
+      object CheckBox11: TCheckBox
+        Tag = 11
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout12: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 330.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+      object Edit12: TEdit
+        Tag = 12
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button12: TButton
+        Tag = 12
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 12'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox12: TSpinBox
+        Tag = 12
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox12: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer12: TTimer
+        Tag = 12
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 96
+        Top = 336
+      end
+      object CheckBox12: TCheckBox
+        Tag = 12
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout13: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+      object Edit13: TEdit
+        Tag = 13
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button13: TButton
+        Tag = 13
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 13'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox13: TSpinBox
+        Tag = 13
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox13: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer13: TTimer
+        Tag = 13
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 144
+        Top = 368
+      end
+      object CheckBox13: TCheckBox
+        Tag = 13
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout14: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 390.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
+      object Edit14: TEdit
+        Tag = 14
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button14: TButton
+        Tag = 14
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 14'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox14: TSpinBox
+        Tag = 14
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox14: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer14: TTimer
+        Tag = 14
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 184
+        Top = 392
+      end
+      object CheckBox14: TCheckBox
+        Tag = 14
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout15: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 420.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+      object Edit15: TEdit
+        Tag = 15
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button15: TButton
+        Tag = 15
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 15'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox15: TSpinBox
+        Tag = 15
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox15: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer15: TTimer
+        Tag = 15
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 232
+        Top = 424
+      end
+      object CheckBox15: TCheckBox
+        Tag = 15
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout16: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 450.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      object Edit16: TEdit
+        Tag = 16
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button16: TButton
+        Tag = 16
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 16'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox16: TSpinBox
+        Tag = 16
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox16: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer16: TTimer
+        Tag = 16
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 272
+        Top = 456
+      end
+      object CheckBox16: TCheckBox
+        Tag = 16
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout17: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 480.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      object Edit17: TEdit
+        Tag = 17
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button17: TButton
+        Tag = 17
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 17'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox17: TSpinBox
+        Tag = 17
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox17: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer17: TTimer
+        Tag = 17
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 320
+        Top = 488
+      end
+      object CheckBox17: TCheckBox
+        Tag = 17
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout18: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 510.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      object Edit18: TEdit
+        Tag = 18
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button18: TButton
+        Tag = 18
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 18'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox18: TSpinBox
+        Tag = 18
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox18: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer18: TTimer
+        Tag = 18
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 368
+        Top = 520
+      end
+      object CheckBox18: TCheckBox
+        Tag = 18
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout19: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 540.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      object Edit19: TEdit
+        Tag = 19
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button19: TButton
+        Tag = 19
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 19'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox19: TSpinBox
+        Tag = 19
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox19: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer19: TTimer
+        Tag = 19
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 416
+        Top = 544
+      end
+      object CheckBox19: TCheckBox
+        Tag = 19
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+    object Layout20: TLayout
+      Align = Top
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 3.000000000000000000
+      Padding.Bottom = 3.000000000000000000
+      Position.Y = 570.000000000000000000
+      Size.Width = 733.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      object Edit20: TEdit
+        Tag = 20
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 5.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditXChange
+      end
+      object Button20: TButton
+        Tag = 20
+        Align = Left
+        Hint = #1042#1099#1087#1086#1083#1085#1080#1090#1100' '#1084#1072#1082#1088#1086#1089
+        Margins.Right = 5.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'M 20'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ButtonClick
+      end
+      object SpinBox20: TSpinBox
+        Tag = 20
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        Max = 100000.000000000000000000
+        Value = 1000.000000000000000000
+        Increment = 100.000000000000000000
+        Position.X = 588.000000000000000000
+        Position.Y = 3.000000000000000000
+        Hint = #1058#1072#1081#1084#1077#1088' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1103
+        Margins.Right = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = SpinBoxChange
+      end
+      object ComboBox20: TComboBox
+        Align = Right
+        Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082' '#1087#1086#1089#1099#1083#1082#1077
+        Margins.Right = 5.000000000000000000
+        Position.X = 458.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 125.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Timer20: TTimer
+        Tag = 20
+        Enabled = False
+        OnTimer = TimerXTimer
+        Left = 472
+        Top = 560
+      end
+      object CheckBox20: TCheckBox
+        Tag = 20
+        Align = Right
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1074#1099#1087#1086#1083#1085#1077#1085#1080#1077' '#1084#1072#1082#1088#1086#1089#1072' '#1087#1086' '#1090#1072#1081#1084#1077#1088#1091
+        Position.X = 683.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = #1042#1082#1083'.'
+        ParentShowHint = False
+        ShowHint = True
+        OnChange = CheckBoxChangeLite
+      end
+    end
+  end
+end

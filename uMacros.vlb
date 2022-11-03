@@ -1,0 +1,14 @@
+﻿[Panel1]
+Coordinates=717,458,55,36
+
+[]
+Coordinates=772,390,135,36
+Visible=False
+ExplicitSubNodes=Enabled
+
+[ButtonReset]
+Coordinates=209,322,66,58
+
+[ButtonClose]
+Coordinates=472,322,66,58
+
